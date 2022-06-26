@@ -8,27 +8,29 @@
         <h1>4 Mostra de Tecnologia</h1>
         <h2>Ficha de Inscrição</h2>
 
-        <div id="dados">
-        <label>Nome<br></label>
-        <input type="text" id="nome"><br>
+        <form id="frmDados" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <label for="txtnome">Nome<br></label>
+        <input type="text" id="nome" name="nome"><br>
         <br>
-        <label>Data de Nascimento</label><br>
-        <input type="date" id="data"><br>
+        <label for="txtdata">Data de Nascimento</label><br>
+        <input type="date" id="data" name="dataNascimento"><br>
         <br>
-        <label>Sexo<br></label>
-        <input type="text" id="sexo"><br>
+        <label for="txtsexo">Sexo<br></label>
+        <input type="text" id="sexo" name="sexo"><br>
         <br>
-        <label>CPF:</label><br>
-        <input type="number" id="cpf"><br>
+        <label for="txtcpf">CPF:</label><br>
+        <input type="number" id="cpf" name="cpf"><br>
         <br>
-        <label>RG:<br></label>
-        <input type="number" id="rg"><br>
+        <label for="txtrg">RG:<br></label>
+        <input type="number" id="rg" name="rg"><br>
         <br>
-        <label>Endereço: </label><br>
-        <input type="text" id="endereco">
+        <label for="txtendereco">Endereço: </label><br>
+        <input type="text" id="endereco" name="endereco">
+        <br>
+        <br>
+        </form>
+        <button type="submit" name="btnEnviar" value="submit">Enviar</button>
 
-        <button
-        </div>
-
+        <script src="formulario.js"></script>
     </body>
 </html>
